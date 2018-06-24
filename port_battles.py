@@ -16,7 +16,7 @@ def main():
     parser.add_argument('--syndicateId', required=True)
     args = parser.parse_args()
 
-    battles = [[]]
+    battles = []
 
     session = requests.Session()
     session.headers.update({'User-Agent': USER_AGENT})
